@@ -1,0 +1,83 @@
+@media (max-width: 580px) {
+  .nav {
+    height: 5vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+
+.nav h1 {
+  margin: 0 auto;
+  position: absolute;
+  font-size: 2vh;
+  text-transform: uppercase;
+  letter-spacing: 2vw;
+  font-weight: 600;
+  animation: mob 2s ease-in-out 1 alternate-reverse;
+}
+@keyframes mob {
+  0% {
+    /* font-size: 1vw; */
+    letter-spacing: 7vw;
+  }
+}
+.logo {
+  visibility: hidden;
+}
+.nav li a {
+  visibility: hidden;
+}
+.link button {
+  visibility: hidden;
+}
+main {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+main h2 {
+  position: absolute;
+  top: 70%;
+  /* left: 30%; */
+  color: black;
+}
+.container {
+  position: relative;
+  height: 20vh;
+}
+.container .slider {
+  left: -160px;
+  width: 80vw;
+  position: absolute;
+}
+.nvn {
+  visibility: hidden;
+}
+.coding{
+    flex-wrap: wrap;
+    border: none;
+    width: 100% ;
+}
+.front{
+    width: 100vw;
+    height: 20vh;
+}
+.front img{
+    width: 90vw;
+}
+
+.back{
+    width: 100vw;
+    height: 20vh;
+}
+.back img{
+    width: 90vw;
+}
+.fullsta {
+  height: 20vh;
+}
+}

@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #fa611e;
+}
+.con {
+  display: flex;
+}
+.bx1 {
+  width: 70vw;
+  height: 100%;
+  padding: 150px;
+}
+.bx1 h1 {
+  font-size: 5vw;
+}
+.bx1 h3 {
+  font-size: 4vw;
+  color: royalblue;
+}
+.bx1 .btn {
+  margin: 20px 0px;
+}
+.btn button {
+  border: none;
+  font-size: 0.9vw;
+  background: #000;
+  color: aquamarine;
+  padding: 10px;
+  border-radius: 3px;
+}
+.btn button:hover {
+  font-size: 1vw;
+  background-color: #fa611e;
+}
+
+.bx1 p {
+  font-size: 1.3vw;
+  font-family: Verdana;
+  margin:2vw;
+}
+.bx2 {
+  width: 30vw;
+  height: 100%;
+  position: relative;
+}
+.bx2 img {
+  width: 40vw;
+  height: 45vh;
+  position: absolute;
+  top: 30px;
+  right: 50%;
+}

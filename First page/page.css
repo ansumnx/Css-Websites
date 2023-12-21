@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body,
+html {
+  width: 100%;
+  height: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.nav {
+  display: flex;
+  background-color: aliceblue;
+  width: 100%;
+  height: 8vh;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav h1 {
+  font-size: 1.5vw;
+  padding: 0 2vw;
+  color: royalblue;
+}
+.link {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  padding: 0 3vw;
+  color: royalblue;
+  font-size: 1vw;
+}
+.link li {
+  padding: 0 1.5vw;
+}
+.link li:hover {
+  color: rgb(230, 18, 18);
+  filter: blur(1px);
+  cursor: pointer;
+}
+.link button {
+  background-color: royalblue;
+  border: none;
+  border-radius: 5px;
+  padding: 1vh 1vw;
+  margin-left: 2vh;
+  font-size: 0.9vw;
+}
+.link button:hover {
+  cursor: pointer;
+  background-color: red;
+}
+
+.pbar {
+  background-color: wheat;
+  width: 100vw;
+  height: 2px;
+  animation: bar 2s 1 alternate;
+  filter: blur(2px);
+}
+
+@keyframes bar {
+  0% {
+    width: 0vw;
+  }
+  55% {
+    width: 30vw;
+  }
+  100% {
+    width: 100vw;
+    filter: blur(2px);
+  }
+}
+
+.contant {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.box1 {
+  width: 55vw;
+  height: 100vh;
+  background-color: #fff5ff;
+  padding: 0vw 2vw;
+}
+.box1 h1 {
+  font-size: 3vw;
+  padding-top: 5vw;
+}
+
+.box1 span {
+  color: royalblue;
+}
+.box1 h2 {
+  color: royalblue;
+}
+.box1 h2 {
+  padding-top: 1.5vw;
+  font-size: 2vw;
+}
+.box1 p {
+  font-size: 1.3vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+}
+
+.box1 img {
+  width: 130px;
+  border-radius: 50%;
+  animation: click 4s 1 alternate;
+}
+@keyframes click {
+  from {
+    width: 100px;
+  }
+  to {
+    width: 150px;
+  }
+}
+
+.bar {
+  background-color: aqua;
+  width: 100vw;
+  height: 2px;
+  transition: 5s;
+}
+
+.box1 button {
+  background-color: royalblue;
+  border: none;
+  border-radius: 5px;
+  padding: 1vh 2vw;
+  font-size: 0.9vw;
+}
+
+.box1 button:hover {
+  cursor: pointer;
+  background-color: red;
+}
+
+.box2 {
+  width: 45vw;
+  height: 100vh;
+}
+.box2 img {
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 580px) {
+  .nav {
+    height: 5vh;
+  }
+  .nav h1 {
+    font-size: 3vw;
+  }
+  .link li {
+    font-size: 2.5vw;
+  }
+  .link button {
+    font-size: 2.5vw;
+  }
+  .box1 h2 {
+    font-size: 2vh;
+  }
+  .box1 p {
+    font-size: 1.4vh;
+  }
+  .contant {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .box1 {
+    width: 100vw;
+    height: 50vh;
+  }
+  .box1 h1 {
+    font-size: 5vw;
+  }
+  .box1 h2 {
+    font-size: 5vw;
+  }
+  .box1 p {
+    font-size: 3.5vw;
+  }
+  .box1 button {
+    padding: 3vw 4vw;
+    margin-top: 2vw;
+    font-size: 3vw;
+  }
+  .box2 {
+    width: 100vw;
+    height: calc(100% - 50vh);
+  }
+}

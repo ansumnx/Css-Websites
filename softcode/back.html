@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Back-end</title>
+    <link rel="stylesheet" href="back.css" />
+    <link rel="stylesheet" href="resback.css">
+  </head>
+  <body>
+    <div class="con">
+      <div class="bx1">
+        <h1>Back-End</h1>
+        <h3>
+          Web Devlopment <br />
+          Project
+        </h3>
+        <p id="back">
+          The term "MERN" typically refers to a full-stack web development
+          technology stack, with each letter representing a different component
+          of the stack:
+          <br /><br />
+          1.M: MongoDB MongoDB is a NoSQL database that stores data in a
+          flexible, JSON-like format. It is commonly used as the database
+          component in MERN applications. <br /><br />
+          2.E: Express.js Express.js is a web application framework for Node.js.
+          It simplifies the process of building robust and scalable web
+          applications by providing a set of features for routing, middleware,
+          and more. <br /><br />
+          3.R: React React is a JavaScript library for building user interfaces.
+          It is used for creating the front-end of MERN applications, enabling
+          developers to build interactive and dynamic user interfaces.
+          <br /><br />
+          4.N: Node.js Node.js is a JavaScript runtime that allows you to run
+          JavaScript on the server-side. It is commonly used as the back-end
+          runtime for MERN applications.
+        </p>
+        <div class="btn">
+          <button onclick="myfun()">READ LESS</button>
+        </div>
+        <script>
+          function myfun() {
+            document.getElementById("back").innerHTML =
+              "Server side programing: 1.Moongodb 2.Nodejs 3.Nextjs ";
+          }
+        </script>
+      </div>
+      <div class="bx2">
+        <img
+          src="https://simpleprogrammer.com/wp-content/uploads/2016/12/What-Is-Back-End-Development.png"
+          alt="Back-end"
+        />
+      </div>
+    </div>
+  </body>
+</html>

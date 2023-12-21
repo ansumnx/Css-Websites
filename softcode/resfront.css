@@ -1,0 +1,29 @@
+@media (max-width: 580px) {
+  .con {
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+  .bx1 {
+    width: 70vw;
+    padding: 10px;
+    margin: 10px;
+    /* font-size: 7vh; */
+  }
+  .bx1 p {
+    font-size: 1.5vh;
+  }
+  .bx2 {
+    display: block;
+    width: 30vw;
+    padding: 0;
+    margin: 0;
+  }
+  .bx2 img {
+    width: 25vw;
+    height: 20vh;
+  }
+  .btn button{
+    font-size: 2vw;
+  }
+}

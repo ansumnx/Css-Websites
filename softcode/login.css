@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100%;
+  font-family: Verdana;
+}
+.login-con {
+  background-color:rgb(85, 97, 85);
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+.login {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  left: 40vw;
+  top: 20vh;
+}
+.log {
+  color: rgb(181, 195, 190);
+  letter-spacing: 0.7vh;
+  margin: 4vh;
+
+  font-size: 3vw;
+}
+
+.in {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.email {
+  width: 19vw;
+  height: 5vh;
+  margin: 3vh;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid aliceblue;
+  color: aliceblue;
+}
+.email:hover {
+  font-size: 1vw;
+  border-color: red;
+}
+.pwd {
+  width: 19vw;
+  height: 5vh;
+  margin: 2vh;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid aliceblue;
+  color: aliceblue;
+}
+.pwd:hover {
+  font-size: 1vw;
+  border-color: red;
+}
+.check {
+  color: aliceblue;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  font-size: 1vw;
+}
+
+.l-in {
+  display: flex;
+  width: 15vw;
+  justify-content: space-between;
+}
+.l-in .l {
+  background-color: transparent;
+  border: none;
+  border-bottom: 5px solid red;
+  padding: 8px 20px;
+  color: white;
+  font-size: 1vw;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.l-in .l:hover {
+  background-color: red;
+  border-radius: 20px;
+}
+.l-in #s {
+  background-color: transparent;
+  border: none;
+  border-bottom: 5px solid blue;
+  padding: 8px 20px;
+  font-size: 1vw;
+  color: white;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.l-in #s:hover {
+  background-color: blue;
+  border-radius: 20px;
+}

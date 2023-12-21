@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>login page</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="login.css" />
+
+</head>
+
+<body>
+  <p id="so"></p>
+
+  <div class="login-con">
+    <div class="login">
+      <h1 class="log">Log-In</h1>
+      <div class="in">
+
+        <input class="email" type="email" placeholder="Email" />
+        <!-- <i class="ri-mail-line"></i> -->
+        <input class="pwd" type="password" placeholder="password" />
+        <!-- <i class="ri-lock-line"></i> -->
+
+
+        <div class="check">
+
+          <input type="checkbox" />
+          <label for="Remember">Remember me Forget password</label>
+        </div>
+
+        <div class="l-in">
+          <a href="softcode.html"><button class="l">Admin</button></a>
+          <button type="button" id="s" onclick="mysign()">Signup</button>
+        </div>
+        <script>
+          function mysign() {
+            document.getElementById("so").innerHTML = "This website is still in devlopment.";
+            document.getElementById("so").style.color = "black";
+            document.getElementById("so").style.background = "white";
+
+
+          }
+
+        </script>
+      </div>
+    </div>
+</body>
+
+</html>

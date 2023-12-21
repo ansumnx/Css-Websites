@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(136, 94, 40, 0.987);
+}
+
+.nav {
+  display: flex;
+  width: 100%;
+  height: 8vh;
+  background-color: ;
+  /* filter: blur(2px); */
+  justify-content: space-between;
+  align-items: center;
+  /* position: absolute; */
+}
+
+.nav i {
+  font-size: 1.3vw;
+}
+
+.nav i:hover {
+  /* filter: blur(0.5px); */
+  cursor: pointer;
+  color: red;
+}
+
+.nav h1 {
+  color: rgb(0, 0, 0);
+  font-size: 2vh;
+  display: flex;
+}
+
+.nav h1:hover {
+  filter: blur(0.5px);
+  cursor: pointer;
+}
+
+.nav ul h2 {
+  display: flex;
+  list-style-type: none;
+  color: rgb(0, 0, 0);
+  font-size: 2vh;
+  gap: 2vw;
+}
+
+.nav ul li:hover {
+  filter: blur(0.5px);
+  cursor: pointer;
+  color: red;
+}
+
+.border {
+  background-color: black;
+  width: 100vw;
+  height: 1px;
+  filter: blur(1px);
+  animation: bor 2s 1s 1 forwards;
+}
+
+@keyframes bor {
+  0% {
+    width: 0vw;
+  }
+
+  30% {
+    width: 10vw;
+  }
+
+  90% {
+    width: 90vw;
+  }
+
+  100% {
+    width: 100vw;
+  }
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  line-height: 2;
+  letter-spacing: 5vh;
+  font-size: 2.5vh;
+  /* position: absolute; */
+}
+/* 
+
+.slide {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  overflow-x: scroll;
+  padding: 40px;
+  scroll-snap-type: x mandatory;
+
+}
+
+.slid {
+  min-width: 55%;
+  height: 430px;
+  border-radius: 5px;
+  overflow: hidden;
+  scroll-snap-align: center;
+  box-shadow:   rgb(210, 12, 12);
+}
+
+.slid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+*/
+.con {
+  padding: 50px;
+}
+.slide {
+  margin: 0 auto;
+  position: relative;
+  max-width: 55vw;
+}
+.slid {
+  display: flex;
+  aspect-ratio: 16/9;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  border-radius: 20px;
+}
+.slid img {
+  flex: 1 0 100%;
+  object-fit: cover;
+  scroll-snap-align: start;
+}
+.na {
+  display: flex;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  bottom: 1.55rem;
+  column-gap: 10px;
+  z-index: 1;
+}
+.na a {
+  width: 1vw;
+  height: 4px;
+  background-color: aliceblue;
+  opacity: 1;
+}
+
+.arrow{
+  font-size: 50px;
+  color: wheat;
+  cursor: pointer;
+}
+.arrow:hover{
+  color: white;
+}
+
+.arrow #left{
+  position: fixed;
+  top: 55%;
+}
+.arrow #right{
+  position: fixed;
+  top: 55%;
+  right: 22%;
+}
+

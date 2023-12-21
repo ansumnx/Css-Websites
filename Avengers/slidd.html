@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    #slider-container {
+      width: 300px; /* Adjust the width as needed */
+      overflow: hidden;
+    }
+
+    #slider-images {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .slider-image {
+      width: 100%;
+      flex: 0 0 auto;
+    }
+
+    #prev-btn, #next-btn {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<div id="slider-container">
+  <div id="slider-images">
+    <img class="slider-image" src="https://wallpapers.com/images/hd/the-avengers-vm16xv4a69smdauy.jpg" alt="Image 1">
+    <img class="slider-image" src="https://www.hdwallpapers.in/download/black_widow_captain_america_clint_barton_hawkeye_hulk_iron_man_hd_avengers_age_of_ultron-HD.jpg" alt="Image 2">
+    <img class="slider-image" src="https://images4.alphacoders.com/909/thumb-1920-909185.jpg" alt="Image 3">
+    <!-- Add more images as needed -->
+  </div>
+</div>
+
+<button id="prev-btn">Previous</button>
+<button id="next-btn">Next</button>
+
+<script>
+  const container = document.getElementById('slider-container');
+  const slider = document.getElementById('slider-images');
+  const prevBtn = document.getElementById('prev-btn');
+  const nextBtn = document.getElementById('next-btn');
+
+  let currentIndex = 0;
+
+  nextBtn.addEventListener('click', () => {
+    if (currentIndex < slider.children.length - 1) {
+      currentIndex++;
+      updateSlider();
+    }
+  });
+
+  prevBtn.addEventListener('click', () => {
+    if (currentIndex > 0) {
+      currentIndex--;
+      updateSlider();
+    }
+  });
+
+  function updateSlider() {
+    const newPosition = -currentIndex * 100 + '%';
+    slider.style.transform = 'translateX(' + newPosition + ')';
+  }
+</script>
+
+</body>
+</html>
