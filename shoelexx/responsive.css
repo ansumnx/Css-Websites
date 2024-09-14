@@ -1,55 +1,59 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-@media (max-width:580px) {
+@media screen and (max-width:600px) {
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        overflow-x:hidden;
+    }
     .nav{
-        background-color:#D51222;
-        height: 8vh;
+        display: none;
+    }
+    main{
         width: 100vw;
-    
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+    }
 
+    #home{
+        font-size: 40px;
     }
-    .nav h1{
-        display: flex;
-        justify-content: center;
-    
+    #homep{
+        font-size: 25px;
     }
-    .nav ul li a {
-        visibility: hidden;
-    }
-    .main{
-        width: 100vw;
-        height: 58vh;
-    }
-    .main .box{
-        background-image: url(photo-1542291026-7eec264c27ff\ \(1\).avif);
-        height: 65vh;
-    }
-    .box .wrk{  position: absolute;
-        top: 20px;
-
-    }
-    .box .wrk h1{
-        font-size: 10vw;
-      
-
+    #menu{
+        font-size: 30px;
+        letter-spacing: 2px;
+        text-align: center;
     }
     .slider{
-        height: 100vh;
-        width: 100vw;
-        
+        background-image: url(img/photo-1542291026-7eec264c27ff\ \(1\).avif);
+        background-position: center;
+        background-size: cover;
     }
-    .slid{
-        display: flex;
-        flex-wrap: wrap;
+.slid{
+    display: none;
+}
+  #soon{
+    font-size: 20px;
+  }
+  #nike{
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  #p{
+    font-size: 10px;
+  }
+  #exp{
+    font-size: 10px;
+  }
+  i{
+    font-size: 20px;
+  }
+  .cpy{
+    display: none;
+  }
+    
 
-    }
-    .slid img{
-        width: 150px;  
-    }
-    .coming h1{
-        font-size: 30px;
-    }   
+    
 }
