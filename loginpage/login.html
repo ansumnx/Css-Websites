@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>login page</title>
+</head>
+
+<body>
+   
+        <div class="page">
+            <h1>Sign up</h1>
+            <form action="" method="post">
+                <label for="name">First Name</label> 
+                <input type="text" name="name" id="name" placeholder="enter your name">
+
+                <label for="last">Last Name</label>
+                <input type="text" name="last" id="last">
+
+                <label for="date">Date of Birth</label>
+                <input type="date" id="date" name="date">
+
+
+                    <label for="gender">gender</label>
+                    <input type="radio" name="gender" id="male">
+                    <label for="male">male</label>
+                    <input type="radio" name="gender" id="female">
+                    <label for="female">female</label>
+             
+                <label for="country">country</label> 
+                <select name="country">
+                    <option value="India">India</option>
+                    <option value="China">China</option>
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="Srilanka">Srilanka</option>
+                    <option value="Nepal">Nepal</option>
+                </select> 
+
+                <label for="phone">Phone</label>
+                <input type="text" id="phone" name="phone">
+
+                <label for="pswd">Password</label>
+                <input type="password" name="pswd" id="pswd">
+
+                <label for="conpswd">Conform Password</label>
+                <input type="password" name="conpswd" id="conpswd">
+
+                <div>
+
+                    <input type="checkbox" id="check" name="check" required>
+                    <label class="check" for="check">I agree to the term of use</label>
+                </div>
+                <div class="login">
+                    <button type="reset" class="cancle">Cancel</button>
+                    <button type="submit" class="done">Submit</button>
+                </div>
+            </form>
+        </div>
+   
+
+</body>
+
+</html>
